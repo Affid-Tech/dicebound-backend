@@ -1,7 +1,7 @@
 package org.affidtech.dnd.diceboundbackend.web
 
 import java.time.OffsetDateTime
-import java.util.UUID
+import java.util.*
 
 data class ScheduleSessionDto(
 	val sessionId: UUID,
@@ -21,4 +21,22 @@ data class ScheduleSessionDto(
 data class DmShortDto(
 	val name: String,
 	val bio: String?
+)
+
+data class AdventureAvailableDto(
+	val adventureId: UUID,
+	val title: String,
+	val gameSystem: String,
+	val dm: DmShortDto,
+	val description: String?,
+	val priceTokens: Int?,         // цена в токенах
+	val freeSeats: Int,
+	val minPlayers: Int,
+	val maxPlayers: Int,
+	val signupLink: String?
+)
+
+data class CurrencyRateDto(
+	val currency: String,
+	val ratio: Int
 )
