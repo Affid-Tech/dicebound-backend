@@ -39,7 +39,7 @@ interface AdventureAvailableRepository : CrudRepository<AdventureEntity, UUID> {
             select count(*)
             from adventure_signup s
             where s.adventure_id = a.id and s.status in ('PENDING','APPROVED')
-        ) > 0
+        ) > 0 AND a.status = 'RECRUITING'
         """, nativeQuery = true
 	)
 	fun findAllAvailableAdventures(): List<AdventureAvailableProjection>
