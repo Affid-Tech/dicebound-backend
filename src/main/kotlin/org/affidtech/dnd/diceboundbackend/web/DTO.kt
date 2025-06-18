@@ -26,6 +26,7 @@ data class DmShortDto(
 data class AdventureAvailableDto(
 	val adventureId: UUID,
 	val title: String,
+	val coverUrl: String,
 	val gameSystem: String,
 	val dm: DmShortDto,
 	val description: String?,
