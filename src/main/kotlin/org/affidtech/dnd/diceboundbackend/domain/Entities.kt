@@ -41,6 +41,7 @@ class AdventureEntity(
 interface AdventureAvailableProjection {
 	fun getAdventureId(): UUID
 	fun getTitle(): String
+	fun getCoverUrl(): String
 	fun getGameSystem(): String
 	fun getDmName(): String
 	fun getDmBio(): String?

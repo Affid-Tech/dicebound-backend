@@ -15,6 +15,7 @@ interface AdventureAvailableRepository : CrudRepository<AdventureEntity, UUID> {
         select
             a.id as adventureId,
             a.title as title,
+            a.cover_url as coverUrl,
             a.game_system as gameSystem,
             u.name as dmName,
             u.bio as dmBio,
