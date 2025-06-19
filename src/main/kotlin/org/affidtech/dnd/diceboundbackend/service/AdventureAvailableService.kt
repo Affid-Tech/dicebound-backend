@@ -19,6 +19,7 @@ class AdventureAvailableService(
 				adventureId = a.getAdventureId(),
 				title = a.getTitle(),
 				coverUrl = a.getCoverUrl(),
+				type = a.getType(),
 				gameSystem = a.getGameSystem(),
 				dm = DmShortDto(a.getDmName(), a.getDmBio()),
 				description = a.getDescription(),

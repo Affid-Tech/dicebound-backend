@@ -42,6 +42,7 @@ interface AdventureAvailableProjection {
 	fun getAdventureId(): UUID
 	fun getTitle(): String
 	fun getCoverUrl(): String
+	fun getType(): String
 	fun getGameSystem(): String
 	fun getDmName(): String
 	fun getDmBio(): String?
