@@ -2,11 +2,13 @@ spring:
   application:
     name: dicebound-backend
   datasource:
-    url: jdbc:postgresql://localhost:5432/dicebound_db
-    username: dicebound
-    password: dicebound
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      max-lifetime: 1800000
 
 telegram:
-  signup-username: Affid_fedorov
+  signup-username: ${SIGNUP_TELEGRAM}
 server:
   port: 8081
