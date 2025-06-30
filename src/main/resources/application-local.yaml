@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: dicebound-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dicebound_db
+    username: dicebound
+    password: dicebound
+
+telegram:
+  signup-username: Affid_fedorov

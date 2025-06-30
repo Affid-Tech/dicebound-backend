@@ -6,7 +6,10 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     hikari:
-      max-lifetime: 1800000
+      minimum-idle: 0
+      idle-timeout: 10000  # 10 seconds
+      max-lifetime: 30000  # 30 seconds
+      connection-timeout: 3000
 
 telegram:
   signup-username: ${SIGNUP_TELEGRAM}
