@@ -27,7 +27,8 @@ class AdventureAvailableService(
 				freeSeats = a.getFreeSeats(),
 				minPlayers = a.getMinPlayers(),
 				maxPlayers = a.getMaxPlayers(),
-				signupLink = buildSignupLink(a.getTitle())
+				signupLink = buildSignupLink(a.getTitle()),
+				startLevel = a.getStartLevel()
 			)
 		}
 	}

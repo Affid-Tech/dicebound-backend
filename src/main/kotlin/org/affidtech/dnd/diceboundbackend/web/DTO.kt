@@ -35,7 +35,8 @@ data class AdventureAvailableDto(
 	val freeSeats: Int,
 	val minPlayers: Int,
 	val maxPlayers: Int,
-	val signupLink: String?
+	val signupLink: String?,
+	val startLevel: Int
 )
 
 data class CurrencyRateDto(

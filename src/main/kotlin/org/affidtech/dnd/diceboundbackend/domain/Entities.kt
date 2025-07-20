@@ -52,6 +52,7 @@ interface AdventureAvailableProjection {
 	fun getMaxPlayers(): Int
 	fun getSignedUp(): Int
 	fun getFreeSeats(): Int
+	fun getStartLevel(): Int
 }
 
 @Entity

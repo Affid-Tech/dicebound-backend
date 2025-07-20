@@ -24,6 +24,7 @@ interface AdventureAvailableRepository : CrudRepository<AdventureEntity, UUID> {
             a.price_units as priceUnits,
             a.min_players as minPlayers,
             a.max_players as maxPlayers,
+            a.start_level as startLevel,
             (
                 select count(*)
                 from adventure_signup s
